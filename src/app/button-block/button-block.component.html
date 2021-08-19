@@ -1,0 +1,20 @@
+<mat-grid-list cols={{breakpoint}} rowHeight="60px" (window:resize)="onResize($event)">
+  <mat-grid-tile>
+    <button class="number-button" mat-flat-button name="5" (click)="onClick($event)">5%</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button class="number-button" mat-flat-button name="10" (click)="onClick($event)">10%</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button class="number-button" mat-flat-button name="15" (click)="onClick($event)">15%</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button class="number-button" mat-flat-button name="25" (click)="onClick($event)">25%</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button class="number-button" mat-flat-button name="50" (click)="onClick($event)">50%</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <input class="custom-button" type="number" matInput placeholder="Custom" min="0" (input)="onInput($event)" (click)="onCustomClick($event)">
+  </mat-grid-tile>
+</mat-grid-list>

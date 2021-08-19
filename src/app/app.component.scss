@@ -1,0 +1,104 @@
+h1 {
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+}
+
+mat-form-field {
+  background-color: hsl(189, 41%, 97%);
+  border: 3px solid hsl(189, 41%, 97%);
+  border-radius: 15px;
+  width: 100%;
+  &:hover {
+    border: 3px solid hsl(172, 67%, 45%);
+  }
+}
+
+.incorrectInput {
+  border: 3px solid orange;
+}
+
+p {
+  display: inline-block;
+}
+
+.errorText {
+  color: orange;
+  display: inline-grid;
+  text-align: right;
+  width: 85%;
+}
+
+.errorTextHidden {
+  display: none;
+}
+
+input {
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: right;
+  width: 100%;
+}
+
+div {
+  width: 90%;
+  height: 100%;
+}
+
+.calc-selector {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  margin: auto;
+  width: 80%;
+}
+
+.calc-result {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+}
+
+.result-size {
+  min-width: 100%;
+}
+
+p {
+  color: hsl(184, 14%, 56%);
+}
+
+.reset-button {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono";
+  font-size: 20px;
+  font-weight: 700;
+  height: 50px;
+  width: 90%;
+  opacity: 50%;
+  &:hover {
+    opacity: 100%;
+  }
+}
+
+.button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding: 0;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 4px !important;
+    padding: .25em .75em .25em .75em !important;
+}
+
+::ng-deep .mat-grid-tile-content {
+  padding: 5% !important;
+  height: 90% !important;
+  width: 100%;
+}
